@@ -43,9 +43,10 @@ export default class View {
   }
 
   renderSpinner() {
-    const markup = `<svg>
-              <use href="${icons}#icon-loader"></use>
-            </svg>`;
+    const markup = `<div class="spinner">
+    <svg><use href="${icons}#icon-loader"></use></svg>
+    </div>
+    `;
 
     this._clear();
     this._parentEl.insertAdjacentHTML('afterbegin', markup);
